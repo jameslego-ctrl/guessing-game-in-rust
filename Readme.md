@@ -19,5 +19,27 @@ You must have [Rust and Cargo](https://www.rust-lang.org/tools/install) installe
 ### Installation & Running
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/jameslego-ctrl/guessing-game-in-rust.git](https://github.com/jameslego-ctrl/guessing-game-in-rust.git)
-   cd guessing-game-in-rust
+   git clone https://github.com/jameslego-ctrl/guessing-game-in-rust.git
+   cd guessing-game-in-rust```
+2. **Run the application:**
+    ```bash
+    cargo run```
+
+### 🛠️ Key Features & Rust Concepts Used
+
+**This project implements several fundamental Rust features:**
+
+- std::io: Used for handling user input from the terminal.
+
+- External Crates: Utilizes the rand crate for random number generation.
+
+- Shadowing: Reusing the guess variable name to convert it from a String to a u32.
+
+- Error Handling: Instead of crashing on invalid input, the game uses a match expression on a Result type to safely continue the loop.
+
+- Enums: Using Ordering (Less, Greater, Equal) to compare values.
+
+### 📂 Project Structure
+* `src/main.rs`: The main logic of the game.
+
+* `Cargo.toml`: Configuration and dependency list (requires rand = "0.8.5").
